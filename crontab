@@ -1,0 +1,2 @@
+0 * * * * /root/vdirsyncer.sh  -v >> /daten/vdirsyncer.log 2>&1
+

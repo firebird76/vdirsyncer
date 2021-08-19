@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  vdirsyncer:
+    build: .
+    restart: unless-stopped
+    volumes:
+       - /volume2/docker/vdirsyncer/root:/root
+       - /volume2/docker/vdirsyncer/daten:/daten
