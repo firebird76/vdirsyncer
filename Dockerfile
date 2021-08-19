@@ -38,7 +38,7 @@ RUN apt-get -qy autoremove
 RUN  /usr/sbin/update-locale LANG=de_DE.UTF-8
 ENV LC_ALL de_DE.UTF-8
 
-VOLUME root:/root/
+#VOLUME root:/root/
 LABEL name="vdirsyncer"
 
 #VOLUME /root
