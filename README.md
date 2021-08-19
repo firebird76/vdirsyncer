@@ -1,0 +1,2 @@
+# vdirsyncer
+vdirsyncer in docker
