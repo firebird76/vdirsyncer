@@ -1,5 +1,5 @@
 # set the base image
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
 # author
 #MAINTAINER Tobias Scharlewsky
