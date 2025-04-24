@@ -50,7 +50,6 @@ RUN echo "Europe/Berlin" > /etc/timezone
 RUN dpkg-reconfigure -f noninteractive tzdata
 COPY crontab /var/spool/cron/crontabs/root
 RUN crontab /var/spool/cron/crontabs/root
-RUN echo '{ "log-driver": "syslog" }' > /etc/docker/daemon.json
 RUN service cron start
 
 
