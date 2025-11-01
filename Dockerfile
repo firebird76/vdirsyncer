@@ -1,11 +1,9 @@
 # set the base image
 FROM debian:stable-slim
-
-# author
-#MAINTAINER Tobias Scharlewsky
-
-LABEL maintainer="dev@scharlewsky.de"
-LABEL build_date="2025-01-10"
+LABEL maintainer="Tobias Scharlewsky<dev@scharlewsky.de>"\
+      org.label-schema.vcs-ref="git-commit-hash" \
+      org.label-schema.name="vdirsyncer"
+LABEL build_date="2025-11-01"
 # update sources list
 RUN apt-get clean
 RUN apt-get update
